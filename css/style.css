@@ -3,7 +3,7 @@
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
-    --bg: #010103;
+    --bg: #f0ede8;
     --border: .1rem soild rgba(68, 68, 68, 0.3);
 }
 
@@ -40,9 +40,11 @@ html::webkit-scrollbar-thumb {
 }
 
 body {
-    background: #f7f7f7;
+    background: var(--bg);
 }
-
+section {
+    padding: 2rem 7%;
+}
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -57,8 +59,9 @@ body {
     letter-spacing: .2rem;
 }
 
+/* header styling */
 .header {
-    background: #f7f7f7;
+    background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +72,9 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-
+    height: 9rem;
+   
+    
 }
 
 .header .logo img {
@@ -196,8 +201,17 @@ body {
 }
 
 
-
-
+/* Home styling */
+.home {
+    margin-top: 9rem; 
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 6;
+}
 
 
 
@@ -213,6 +227,9 @@ body {
     }
     .header {
         padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 2rem
     }
 }
 
